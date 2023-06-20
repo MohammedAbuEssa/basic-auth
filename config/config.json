@@ -2,21 +2,21 @@
     "development": {
       "username": "username",
       "password": "password",
-      "database": "oauth_4ews",
+      "database": "oauth",
       "host": "127.0.0.1",
       "dialect": "postgres"
     },
     "test": {
       "username": "username",
       "password": "password",
-      "database": "oauth_4ews",
+      "database": "oauth",
       "host": "127.0.0.1",
       "dialect": "sqlite::memory:"
     },
     "production": {
       "username": "username",
       "password": "password",
-      "database": "oauth_4ews",
+      "database": "oauth",
       "host": "127.0.0.1",
       "dialect": "postgres"
     }
