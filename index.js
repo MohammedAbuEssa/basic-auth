@@ -1,8 +1,9 @@
 "use strict";
 require("dotenv").config();
-let port = process.env.PORT || 3000;
-const app = require("./src/server");
-const { db } = require("./src/models/index");
+const server = require("./src/auth/server");
+const { db } = require("./src/auth/middleware/models/index");
+const port = process.env.PORT || 3000;
+
 db.sync().then(() => {
-  app.start(port);
+  server.start(port);
 });
