@@ -1,9 +1,9 @@
 "use strict";
 const express = require("express");
 const app = express();
-const userRouter = require("./auth/routes/user.route");
+const userRouter = require("./routes/user.route");
 const error404Handler = require("./middleware/404");
-const error500Handler = require("./middleware/500");
+const error500Handler = require("./middleware/505");
 app.use(express.json());
 app.use(userRouter);
 

@@ -1,16 +1,14 @@
-"use-strict";
-
-const User = (sequelize, DataTypes) =>
-  sequelize.define("User", {
+"use strict";
+const user = (sequelize, DataTypes) =>
+  sequelize.define("users", {
     username: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
     },
-    passord: {
+    password: {
       type: DataTypes.STRING,
       allowNull: false,
     },
   });
-
-module.exports = User;
+module.exports = user;
